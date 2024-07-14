@@ -1,0 +1,257 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+body {
+  max-width: 1440px;
+  margin: 0;
+}
+* {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+aside #background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+aside {
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  max-height: 900px;
+  max-width: 483px;
+  /* Delete this */
+  /* display: none; */
+}
+
+/* Front Card */
+#frontCard {
+  background-image: url("../images/bg-card-front.png");
+  position: absolute;
+  top: 21%;
+  left: 30%;
+  width: 35vw;
+  height: -webkit-fill-available;
+  max-width: 447px;
+  max-height: 245px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#frontCard svg {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  left: 7%;
+}
+
+#name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  position: absolute;
+  left: 7%;
+  bottom: 12%;
+}
+#numCredit {
+  font-size: 2.1vw;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  letter-spacing: 3px;
+  position: absolute;
+  left: 7%;
+  bottom: 30%;
+}
+#date,
+#date > span {
+  color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+span#date {
+  position: absolute;
+  right: 7%;
+  bottom: 12%;
+}
+#backCard {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  background-image: url("../images/bg-card-back.png");
+  width: 35vw;
+  height: -webkit-fill-available;
+  max-width: 447px;
+  max-height: 245px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+#clear {
+  clear: both;
+}
+span#cvcNumber {
+  color: hsl(0, 0%, 100%);
+  font-weight: 450;
+  margin-right: 3em;
+  margin-bottom: 0.2em;
+}
+/* Form */
+main {
+  height: max-content;
+  position: absolute;
+  top: 35%;
+  right: 15%;
+}
+label {
+  font-size: 11px;
+  font-weight: 500;
+  color: hsl(278, 68%, 11%);
+  letter-spacing: 1px;
+}
+input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 7px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+input:focus {
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: none;
+  border-image: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  border-image-slice: 1;
+}
+
+input.footer {
+  width: 3em;
+  margin-right: 10px;
+}
+input#cvcNumber {
+  width: 5em;
+  margin-left: 10px;
+  padding-right: 3em;
+}
+div#contenar {
+  display: flex;
+  justify-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+label#cvcLabel {
+  margin-left: 20%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+div#labels {
+  margin-bottom: -45px;
+}
+button#confirm {
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 5px;
+  font-weight: 500;
+  border: 0 solid;
+}
+div#shadow {
+  box-shadow: 0 20px 40px #dfdfdf, 0 40px 60px #dfdfdf;
+  z-index: -1;
+  position: absolute;
+  top: 21%;
+  left: 30%;
+  width: 35vw;
+  height: -webkit-fill-available;
+  max-width: 447px;
+  max-height: 245px;
+}
+span.error {
+  color: hsl(0, 100%, 66%);
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 5px;
+  width: max-content;
+  display: none;
+}
+
+span#cvc {
+  padding-left: 26%;
+  padding-right: 5%;
+  visibility: hidden;
+  display: block;
+}
+span#exp {
+  visibility: hidden;
+  display: block;
+}
+div#errorsButtom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 25px;
+}
+.error:focus {
+  background-image: hsl(0, 100%, 66%);
+  border-image: hsl(0, 100%, 66%);
+  background-image: linear-gradient(white, white),
+    linear-gradient(hsl(0, 100%, 66%), hsl(0, 100%, 66%));
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: none;
+  border-image: linear-gradient(hsl(0, 100%, 66%), hsl(0, 100%, 66%));
+  border-image-slice: 1;
+}
+button#continue {
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: 500;
+  border: 0 solid;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+div#confirmation {
+  text-align: -webkit-center;
+  display: none;
+}
+#confirmation p {
+  color: hsl(279, 6%, 55%);
+  font-weight: 500;
+  width: max-content;
+}
+#confirmation span {
+  font-size: x-large;
+  color: hsl(278, 68%, 11%);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
