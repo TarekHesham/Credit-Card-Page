@@ -9,7 +9,7 @@ username.onkeyup = function (key) {
     return;
   }
   if (!username.value) {
-    usernameCard.innerText = "JANE APPLESEED";
+    usernameCard.innerText = "TAREK HESHAM";
     if (usernameError.style.display == "block") {
       usernameError.style.display = "none";
       username.classList.remove("error");
