@@ -3,6 +3,7 @@
 body {
   max-width: 1440px;
   margin: 0;
+  background: white;
 }
 * {
   font-size: 18px;
